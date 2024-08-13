@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Moses Oni Oluwadamilare's portfolio website showcasing projects, skills, and contact information."
+    />
+    <meta name="author" content="Moses Oni Oluwadamilare" />
+    <meta
+      name="keywords"
+      content="Moses Oni Oluwadamilare, portfolio, web developer, software engineer, projects, contact"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <title>Mport - Moses Oni Oluwadamilare's Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <link rel="canonical" href="https://www.example.com" />
+    <!-- Update with your actual domain -->
+
+    <!-- Preconnect and Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.3/tailwindcss-with-all-plugins.js"></script>
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.3/tailwindcss.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon" />
+    <!-- Update with your favicon path -->
+
+    <!-- Custom JavaScript -->
+    <script src="main.js" defer></script>
+    <style>
+      .jost {
+        font-family: "Jost", sans-serif;
+      }
+      .dm-serif {
+        font-family: "DM Serif Display", serif;
+      }
+    </style>
+  </head>
+  <body class="jost">
+    <header>
+      <nav
+        class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-900"
+      >
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        >
+          <a href="#" class="flex dm-serif items-center">
+            <i class="fab fa-html5 text-2xl text-gray-500 mr-2"></i>
+
+            <span
+              class="self-center text-base font-semibold whitespace-nowrap dark:text-white"
+              >Mofolio</span
+            >
+          </a>
+          <div class="flex items-center lg:order-2">
+            <a
+              href="#"
+              class="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-400 font-semibold text-center rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-gray-700 dark:hover:bg-gray-800 focus:outline-none dark:focus:ring-gray-900"
+              >Contact Me</a
+            >
+
+            <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <i class="fas fa-bars w-6 text-lg"></i>
+              <i class="fas fa-times w-6 h-6 hidden"></i>
+            </button>
+          </div>
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="block py-2 pr-4 pl-3 text-white rounded bg-gray-800 lg:bg-transparent lg:text-gray-800 lg:p-0 dark:text-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-gray-800 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#service"
+                  class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-gray-800 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#work"
+                  class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-gray-800 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                  >My Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skill"
+                  class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-gray-800 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-200 lg:hover:bg-transparent lg:hover:text-gray-800 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="home">
+      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+        <div class="grid grid-cols-1 items-center gap-8 sm:gap-20 lg:grid-cols-2">
+          <div class="max-w-3xl">
+            <h1 class="mb-6 pb-4 text-4xl font-bold md:text-6xl text-gray-900 dark:text-white">
+              Expert Web Developer and Designer
+            </h1>
+            <p class="mb-6 max-w-lg text-gray-500 md:mb-10 lg:mb-12">
+              Experienced in crafting high-quality, responsive websites and user interfaces. With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, I deliver solutions that are not only functional but also engaging and visually appealing.
+            </p>
+            <a
+              href="mailto:your.email@example.com"
+              class="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-400 font-semibold rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-gray-700 dark:hover:bg-gray-800 focus:outline-none dark:focus:ring-gray-900"
+            >Contact me</a>
+    
+            <div class="w-full max-w-xs my-6">
+              <div class="mb-4 py-1.5 pl-4 border-l-4 border-gray-800">
+                <p class="text-sm text-gray-900 dark:text-white">
+                  Proven track record of successful project deliveries with high client satisfaction.
+                </p>
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="img2avatar.png"
+                  alt="Moses Oni"
+                  class="mr-2 inline-block h-7 w-7 rounded-full object-cover"
+                />
+                <p class="text-sm font-bold text-gray-900 dark:text-white">
+                  Moses Oni
+                </p>
+                <div class="mx-4 h-full py-3 border-r border-gray-300"></div>
+                <i class="fas fa-star text-black mr-2"></i>
+                <p class="text-sm text-gray-500">5 stars</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="img3flower.png"
+              alt="Design Concept"
+              class="mx-auto inline-block h-full w-full max-w-2xl object-cover rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+        <h2 class="mb-8 text-3xl font-bold md:text-5xl lg:mb-14">
+          About Me
+        </h2>
+        <p class="mb-8 max-w-lg text-sm text-gray-500 sm:text-base lg:mb-24">
+          I'm Moses Oni, a versatile professional specializing in web development, graphic design, and data analysis. I am passionate about creating intuitive and user-friendly digital solutions that solve real-world problems and enhance user experience.
+        </p>
+        <div class="grid gap-10 lg:grid-cols-2 lg:gap-12">
+          <div class="inline-block h-full w-full rounded-2xl bg-gray-100 flex items-center justify-center">
+            <img
+              src="img3flower.png"
+              alt="Design Concept"
+              class="mx-auto inline-block h-full w-full max-w-2xl object-cover rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <div class="flex items-center rounded-md bg-gray-300 px-3 py-1">
+              <i class="fas fa-circle text-xs text-black mr-1"></i>
+              <p class="text-sm">Available for work</p>
+            </div>
+            <p class="text-sm text-gray-500 sm:text-xl">
+              Freelance & Remote
+            </p>
+            <h1 class="mb-6 text-4xl font-bold md:text-6xl lg:mb-8">
+              Moses Oni
+            </h1>
+            <p class="text-sm text-gray-500 sm:text-xl">
+              I am dedicated to transforming complex ideas into elegant solutions, consistently pushing the boundaries of creativity and technology. My goal is to provide exceptional service and drive success through innovative approaches.
+            </p>
+            <div class="mb-8 mt-8 h-px w-full bg-black"></div>
+            <div class="mb-6 flex flex-col gap-2 text-sm text-gray-500 sm:text-base lg:mb-8">
+              <p><strong>2020: </strong>Recognized as Top Web Developer by DesignAwards.com</p>
+              <p><strong>2021: </strong>Featured in Web Design Magazine for Innovative Projects</p>
+            </div>
+            <div class="flex items-center rounded-md bg-gray-300 px-3 py-1">
+              <i class="fas fa-circle text-xs text-black mr-1"></i>
+              <p class="text-sm">All Achievements</p>
+            </div>
+            <div class="flex flex-col mt-4 gap-4 sm:flex-row">
+              <a
+                href="mailto:your.email@example.com"
+                class="text-gray-800 dark:text-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-300 font-semibold text-center rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+              >
+                <i class="fas fa-envelope text-base text-center mr-2"></i>
+                Email Me
+              </a>
+              <a
+                href="#"
+                class="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-400 font-semibold text-center rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-gray-700 dark:hover:bg-gray-800 focus:outline-none dark:focus:ring-gray-900"
+              >
+                <i class="fas fa-file-alt text-base text-center mr-2"></i>
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="service">
+      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+        <div class="flex flex-col items-center text-center">
+          <h2 class="text-3xl font-bold md:text-5xl">
+            Comprehensive Digital Solutions
+          </h2>
+          <p class="mb-8 mt-4 max-w-lg text-base text-gray-500 md:mb-12 md:text-lg lg:mb-16">
+            Specializing in web development, data analysis, and graphic design, I offer tailored services to meet your needs and exceed your expectations.
+          </p>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-4 lg:gap-6">
+          <div class="grid gap-6 rounded-md border border-solid border-gray-300 p-8 md:p-10">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-100">
+              <i class="fas fa-headset text-3xl text-gray-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Support</h3>
+            <p class="text-sm text-gray-500">
+              Dedicated support to ensure your projects run smoothly with high efficiency and reliability.
+            </p>
+          </div>
+          <div class="grid gap-6 rounded-md border border-solid border-gray-300 p-8 md:p-10">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-100">
+              <i class="fas fa-cogs text-3xl text-gray-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Organise</h3>
+            <p class="text-sm text-gray-500">
+              Expertise in project management and data analysis to ensure effective execution and clarity in every task.
+            </p>
+          </div>
+          <div class="grid gap-6 rounded-md border border-solid border-gray-300 p-8 md:p-10">
+            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gray-100">
+              <i class="fas fa-th-large text-3xl text-gray-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold">Flexibility</h3>
+            <p class="text-sm text-gray-500">
+              Adapts to diverse project requirements, delivering customized solutions that fit your specific needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="mx-auto w-full max-w-7xl px-5 md:px-10">
+        <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-4 lg:gap-6">
+          <div class="relative p-8 md:p-10">
+            <div class="flex items-center justify-center h-24 w-24 rounded-full bg-gray-100">
+              <i class="fas fa-tools text-3xl text-gray-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mt-6">Development</h3>
+            <p class="text-sm text-gray-500 mt-2">
+              Crafting modern, responsive websites and applications using the latest technologies and best practices.
+            </p>
+          </div>
+          <div class="relative p-8 md:p-10">
+            <div class="flex items-center justify-center h-24 w-24 rounded-full bg-gray-100">
+              <i class="fas fa-chart-line text-3xl text-gray-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mt-6">Analysis</h3>
+            <p class="text-sm text-gray-500 mt-2">
+              Leveraging data to uncover insights and drive strategic decision-making, enhancing overall performance.
+            </p>
+          </div>
+          <div class="relative p-8 md:p-10">
+            <div class="flex items-center justify-center h-24 w-24 rounded-full bg-gray-100">
+              <i class="fas fa-paint-brush text-3xl text-gray-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mt-6">Design</h3>
+            <p class="text-sm text-gray-500 mt-2">
+              Creating visually compelling and user-centric designs that captivate and engage your audience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="work">
+      <!-- Container -->
+      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+        <!-- Title -->
+        <h2 class="text-center text-3xl font-bold md:text-5xl">Portfolio</h2>
+        <p class="msm:text-base mb-8 mt-4 text-center text-sm text-gray-500 md:mb-12 lg:mb-16">
+          Let’s Build Something Exciting Together!
+        </p>
+        <!-- Content -->
+        <div class="grid justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-3">
+          <!-- Item 1 -->
+          <a href="#" class="flex flex-col items-center rounded-md p-4 lg:p-2">
+            <div class="mb-3 flex h-90 w-90 items-center justify-center rounded-full bg-gray-100">
+              <img src="project1.jpg" alt="" class="mx-auto inline-block h-full w-full max-w-2xl object-cover rounded-lg" />
+            </div>
+            <p class="mb-1 text-center font-bold">EventSphere</p>
+            <p class="text-center text-sm text-gray-500">A comprehensive event management system designed to simplify scheduling and manage attendees efficiently. Developed using HTML, CSS, and JavaScript.</p>
+          </a>
+          <!-- Item 2 -->
+          <a href="#" class="flex flex-col items-center rounded-md p-4 lg:p-2">
+            <div class="mb-3 flex h-90 w-90 items-center justify-center rounded-full bg-gray-100">
+              <img src="projecct2.jpg" alt="" class="mx-auto inline-block h-full w-full max-w-2xl object-cover rounded-lg" />
+            </div>
+            <p class="mb-1 text-center font-bold">Music Player</p>
+            <p class="text-center text-sm text-gray-500">An elegant and user-friendly music player interface created with HTML, CSS, and JavaScript. Ideal for managing and enjoying your music collection.</p>
+          </a>
+          <!-- Item 3 -->
+          <a href="#" class="flex flex-col items-center rounded-md p-4 lg:p-2">
+            <div class="mb-3 flex h-90 w-90 items-center justify-center rounded-full bg-gray-100">
+              <img src="project3.jpg" alt="" class="mx-auto inline-block h-full w-full max-w-2xl object-cover rounded-lg" />
+            </div>
+            <p class="mb-1 text-center font-bold">School Management System UI</p>
+            <p class="text-center text-sm text-gray-500">A clean and intuitive user interface design for a school management system, crafted using Figma and Adobe XD to enhance user experience.</p>
+          </a>
+          <!-- Item 4 -->
+          <a href="#" class="flex flex-col items-center rounded-md p-4 lg:p-2">
+            <div class="mb-3 flex h-90 w-90 items-center justify-center rounded-full bg-gray-100">
+              <img src="project4.png" alt="" class="mx-auto inline-block h-full w-full max-w-2xl object-cover rounded-lg" />
+            </div>
+            <p class="mb-1 text-center font-bold">Task Manager</p>
+            <p class="text-center text-sm text-gray-500">A task management tool designed to streamline productivity with features for task tracking and prioritization, built using modern web technologies.</p>
+          </a>
+          <!-- Item 5 -->
+          <a href="#" class="flex flex-col items-center rounded-md p-4 lg:p-2">
+            <div class="mb-3 flex h-90 w-90 items-center justify-center rounded-full bg-gray-100">
+              <img src="project5.png" alt="" class="mx-auto inline-block h-full w-full max-w-2xl object-cover rounded-lg" />
+            </div>
+            <p class="mb-1 text-center font-bold">Portfolio Website</p>
+            <p class="text-center text-sm text-gray-500">A personal portfolio website showcasing my projects and skills, developed with a focus on clean design and user engagement.</p>
+          </a>
+          <!-- Item 6 -->
+          <a href="#" class="flex flex-col items-center rounded-md p-4 lg:p-2">
+            <div class="mb-3 flex h-90 w-90 items-center justify-center rounded-full bg-gray-100">
+              <img src="project2.png" alt="" class="mx-auto inline-block h-full w-full max-w-2xl object-cover rounded-lg" />
+            </div>
+            <p class="mb-1 text-center font-bold">E-Commerce Platform</p>
+            <p class="text-center text-sm text-gray-500">An e-commerce platform designed for seamless online shopping experiences, including features for product management and secure transactions.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="skill">
+      <!-- Container -->
+      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+        <!-- Title -->
+        <div class="mb-12 flex flex-col md:flex-row">
+          <h2 class="mb-8 text-3xl max-w-lg font-bold md:mb-12 md:text-5xl lg:mb-16">
+            Skills and Expertise
+          </h2>
+          <p class="text-sm ml-16 text-gray-500 max-w-lg">
+            I bring a diverse skill set to the table, combining technical expertise with a creative approach. From development to design, I have the experience to tackle a variety of challenges and deliver exceptional results.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- FactsCard 1 -->
+          <div class="bg-gray-100 rounded-lg py-10 px-5 flex flex-col items-center justify-between h-80">
+            <div class="text-5xl text-gray-600">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="text-xl font-semibold mt-4">
+              <h3>Expertise in Development</h3>
+              <p>Programming Languages</p>
+            </div>
+            <p class="mt-4 text-sm text-center">
+              Proficient in HTML, CSS, JavaScript, and various frameworks. Capable of building responsive and dynamic web applications.
+            </p>
+          </div>
+          <!-- FactsCard 2 -->
+          <div class="bg-gray-100 rounded-lg py-10 px-5 flex flex-col items-center justify-between h-80">
+            <div class="text-5xl text-gray-600">
+              <i class="fas fa-pencil-alt"></i>
+            </div>
+            <div class="text-xl font-semibold mt-4">
+              <h3>Design Skills</h3>
+              <p>UI/UX Design</p>
+            </div>
+            <p class="mt-4 text-sm text-center">
+              Experienced in creating intuitive and visually appealing designs using tools like Figma and Adobe XD to enhance user experience.
+            </p>
+          </div>
+          <!-- FactsCard 3 -->
+          <div class="bg-gray-100 rounded-lg py-10 px-5 flex flex-col items-center justify-between h-80">
+            <div class="text-5xl text-gray-600">
+              <i class="fas fa-analytics"></i>
+            </div>
+            <div class="text-xl font-semibold mt-4">
+              <h3>Data Analysis</h3>
+              <p>Insightful Analytics</p>
+            </div>
+            <p class="mt-4 text-sm text-center">
+              Skilled in analyzing data to drive strategic decisions and optimize performance using modern data analysis techniques.
+            </p>
+          </div>
+          <!-- FactsCard 4 -->
+          <div class="bg-gray-100 rounded-lg py-10 px-5 flex flex-col items-center justify-between h-80">
+            <div class="text-5xl text-gray-600">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="text-xl font-semibold mt-4">
+              <h3>Team Collaboration</h3>
+              <p>Effective Communication</p>
+            </div>
+            <p class="mt-4 text-sm text-center">
+              Adept at working within teams to achieve common goals and ensure project success, with a strong focus on clear and effective communication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="contact">
+      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+        <div class="flex flex-col items-center text-center">
+          <h2 class="text-3xl font-bold md:text-5xl">
+            Get in Touch
+          </h2>
+          <p class="mb-8 mt-4 max-w-lg text-base text-gray-500 md:mb-12 md:text-lg lg:mb-16">
+            I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out via email or connect with me on LinkedIn.
+          </p>
+          <a
+            href="mailto:your.email@example.com"
+            class="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-400 font-semibold rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-gray-700 dark:hover:bg-gray-800 focus:outline-none dark:focus:ring-gray-900"
+          >
+            <i class="fas fa-envelope text-base text-center mr-2"></i>
+            Email Me
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+
+
+    <!-- Add your footer content here -->
+    <footer class="bg-gray-900 text-gray-300 py-6">
+      <div class="container mx-auto px-5">
+        <div class="flex flex-col items-center text-center">
+          <p class="text-sm">
+            &copy; 2024 Moses Oni. All rights reserved.
+          </p>
+          <div class="flex gap-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.querySelector(
+          "[data-collapse-toggle]"
+        );
+        const mobileMenu = document.getElementById("mobile-menu-2");
+        const closeButton = mobileMenuButton.querySelector(".fa-times");
+        const openButton = mobileMenuButton.querySelector(".fa-bars");
+
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+          closeButton.classList.toggle("hidden");
+          openButton.classList.toggle("hidden");
+        });
+
+        document.querySelectorAll("#mobile-menu-2 a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+            closeButton.classList.add("hidden");
+            openButton.classList.remove("hidden");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
